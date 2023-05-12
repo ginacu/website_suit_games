@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* nav */
+
 nav {
     background-color: #6096B4;
     margin: auto;
@@ -11,7 +13,7 @@ nav {
 }
 nav img {
     width: 100px;
-    margin: 3px 3px;
+    margin: 3px;
     padding-left: 10px;
 }
 
@@ -32,7 +34,133 @@ nav li {
     display: inline-block;
 }
 
+/* home */
+
+#home {
+    background-color: #EEE9DA;
+    font-family: 'Cartoonist';
+    margin-top: 50px;
+}
+
+.content{
+    width: 100%;
+    float: left;
+}
+
+.card {
+    width: 50%;
+    float: left;
+}
+
+h1 {
+    font-size: 80px;
+    margin-left: 80px;
+}
+
+.blue {
+    color: #6096B4;
+}
+
+.orange {
+    color: #ECA869;
+}
+
+#home p{
+    color:#6096B4;
+    font-size: 24px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+/* button at home */
+
+.buttonAtHome {
+  align-items: center;
+  appearance: none;
+  background-color: #e6e4e4;
+  border-radius: 0px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #e2954d;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Cartoonist",monospace;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  margin-left: 80px;
+  margin-top: 30px;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+}
+
+.buttonAtHome:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.buttonAtHome:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.buttonAtHome:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+aside {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+aside img {
+    width: 50%;
+}
+
 @font-face {
     font-family: "Cartoonist";
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
 }
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: right;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
