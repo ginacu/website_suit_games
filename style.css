@@ -6,6 +6,7 @@
 /* nav */
 
 nav {
+    position: fixed;
     background-color: #6096B4;
     margin: auto;
     width: 100%;
@@ -45,7 +46,7 @@ nav li {
 }
 
 .container{
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .card {
