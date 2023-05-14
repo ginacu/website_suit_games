@@ -21,6 +21,7 @@ nav ul {
     list-style-type: none;
     float: right;
 }
+
 nav ul a {
     color: white;
     text-decoration: none;
@@ -34,17 +35,17 @@ nav li {
     display: inline-block;
 }
 
+
 /* home */
 
 #home {
     background-color: #EEE9DA;
     font-family: 'Cartoonist';
-    margin-top: 50px;
+    min-height: 100vh; /* ini membuat tinggi bg full spt 100% dan responsif */
 }
 
-.content{
-    width: 100%;
-    float: left;
+.container{
+    margin-top: 80px;
 }
 
 .card {
@@ -54,7 +55,7 @@ nav li {
 
 h1 {
     font-size: 80px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 .blue {
@@ -68,8 +69,7 @@ h1 {
 #home p{
     color:#6096B4;
     font-size: 24px;
-    margin-left: 80px;
-    margin-top: 30px;
+    margin-left: 100px;
 }
 
 /* button at home */
@@ -91,7 +91,7 @@ h1 {
   justify-content: center;
   line-height: 1;
   list-style: none;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 30px;
   overflow: hidden;
   padding-left: 16px;
@@ -132,6 +132,13 @@ aside img {
     width: 50%;
 }
 
+
+/* Tentang Permainan */
+
+#tentangPermainan {
+    background-color: #6096B4;
+}
+
 @font-face {
     font-family: "Cartoonist";
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
@@ -154,7 +161,7 @@ aside img {
  }
  
  .cf:after {
-     clear: right;
+     clear: both;
  }
  
  /**
