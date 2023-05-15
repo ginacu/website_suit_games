@@ -7,6 +7,7 @@
 
 nav {
     position: fixed;
+    z-index: 99;
     background-color: #6096B4;
     margin: auto;
     width: 100%;
@@ -83,7 +84,6 @@ h1 {
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #e2954d;
   cursor: pointer;
   display: inline-flex;
   font-family: "Cartoonist",monospace;
@@ -122,6 +122,11 @@ h1 {
   transform: translateY(2px);
 }
 
+.buttonAtHome a {
+    text-decoration: none;
+    color: #e2954d;
+}
+
 aside {
     width: 50%;
     display: flex;
@@ -137,7 +142,29 @@ aside img {
 /* Tentang Permainan */
 
 #tentangPermainan {
-    background-color: #6096B4;
+    background-color: #BDCDD6;
+    font-family: 'Cartoonist';
+    min-height: 100vh;
+    padding-top: 5px;
+}
+
+#tentangPermainan p {
+    font-size: 20px;
+    width: 70%;
+    text-align: justify;
+}
+
+#tentangPermainan aside img {
+    width: 70%;
+    margin: auto;
+}
+
+.blue2 {
+    color: #43697e;
+}
+
+.orange2 {
+    color: #c7884d;
 }
 
 @font-face {
