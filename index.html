@@ -35,15 +35,13 @@
                     Jawa
                 </h1>
                 <p>Kalahkan komputer hanya dengan orang, gajah atau semut!</p>
-                <button class="buttonAtHome" type="button"><a href="#tentangPermainan">Tentang Permainan</a></button>
-                <button class="buttonAtHome" type="button"><a href="#permainan">Mainkan</a></button>
+                <a href="#tentangPermainan"><button class="buttonAtHome" type="button">Tentang Permainan</button></a>
+                <a href="#permainan"><button class="buttonAtHome" type="button">Mainkan</button></a>
             </header>
     
             <aside class="card">
                 <img src="assets\img\man.png" alt="man playing games from up point of view">
             </aside>
-        </div>
-
         </div>
 
     </div>
@@ -68,7 +66,7 @@
                 </p> <br>
                 
                 <p class="blue2">
-                    Dalam suit, jari yang menjadi pemenang antara ibu jari (gajah) dengan telunjuk (orang), pemenangnya adalah ibu jari (gajah). Telunjuk (orang) lawan kelingking (semut), pemenangnya adalah telunjuk (orang). Kelingking (semut) bertemu ibu jari (gajah),  pemenangnya adalah kelingking (semut). Yuk suit sekarang
+                    Dalam suit, jari yang menjadi pemenang antara ibu jari (gajah) dengan telunjuk (orang), pemenangnya adalah ibu jari (gajah). Telunjuk (orang) lawan kelingking (semut), pemenangnya adalah telunjuk (orang). Kelingking (semut) bertemu ibu jari (gajah),  pemenangnya adalah kelingking (semut). Yuk <a href="#permainan"><button class="buttonAtHome" type="button" style="margin:0; height: 40px;">Mainkan</button></a> suit sekarang
                 </p>
             </article>
         </div>
@@ -77,6 +75,26 @@
 
     <!-- Permainan -->
     <div id="permainan">
+        <div class="content">
+            <div id="petunjuk" class="cf">
+                <h2>Simbol</h2>
+                <br>
+                <br>
+                <div class="card">
+                    <ul>
+                        <li> <img src="assets\img\gajah.png" alt="ibu jari alias gajah"> <p>&nbsp; Ini adalah gajah</p> </li> <br>
+                        <li> <img src="assets\img\orang.png" alt="jari telunjuk alias orang"> <p>&nbsp; Ini adalah orang</p> </li> <br>
+                        <li> <img src="assets\img\semut.png" alt="jari manis alias semut"> <p>&nbsp; Ini adalah semut</p></li> <br>
+                    </ul>
+                </div>
+            </div>
+            <div id="score">
+                <div class="card"></div>
+            </div>
+            <div id="arena">
+                <div class="card"></div>
+            </div>
+        </div>
 
     </div>
 

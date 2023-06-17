@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* nav */
@@ -83,7 +84,6 @@ h1 {
   border-radius: 0px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
   font-family: "Cartoonist",monospace;
@@ -101,7 +101,7 @@ h1 {
   text-align: left;
   text-decoration: none;
   transition: box-shadow .15s,transform .15s;
-  user-select: none;
+  user-select: none; /* membuat tulisan tidak bisa diblock sehingga gabisa dicopy */
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
@@ -122,7 +122,7 @@ h1 {
   transform: translateY(2px);
 }
 
-.buttonAtHome a {
+a .buttonAtHome {
     text-decoration: none;
     color: #e2954d;
 }
@@ -166,6 +166,106 @@ aside img {
 .orange2 {
     color: #c7884d;
 }
+
+/* Permainan */
+
+#permainan {
+    background-color: #EEE9DA;
+    font-family: 'Cartoonist';
+    min-height: 100vh;
+    padding-top: 5px;
+}
+
+#permainan .content {    
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#petunjuk {    
+    float: left;
+    width: 20%;
+    padding: 0px 10px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+#petunjuk h2{
+    text-align: center;
+    color: #ECA869;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    display: inline-flex;
+    font-family: "Cartoonist",monospace;
+    font-size: 20px;
+    height: 48px;
+    width: 50%;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 100px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    margin: auto 25%;
+}
+
+#petunjuk .card{
+    text-align: center;
+    color: #ECA869;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    display: inline-flex;
+    font-family: "Cartoonist",monospace;
+    font-size: 20px;
+    width: 50%;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    position: relative;
+    margin: auto 25%;
+}
+
+#petunjuk .card li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+#petunjuk .card img {
+    height: -20%;
+}
+/* #score {    
+    float: left;
+    width: 20%;
+    padding: 0px 10px;
+}
+
+#score .card {
+    padding: 200px 15px ;
+    background-color: gray;
+    font-size: 30px;
+    color: #fff;
+    page-break-after: always;
+}
+
+#arena {    
+    float: left;
+    width: 50%;
+    padding: 0px 10px;
+}
+
+#arena .card {
+    padding: 200px 15px ;
+    background-color: gray;
+    font-size: 30px;
+    color: #fff;
+} */
 
 @font-face {
     font-family: "Cartoonist";
