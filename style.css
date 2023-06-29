@@ -173,7 +173,7 @@ aside img {
     background-color: #EEE9DA;
     font-family: 'Cartoonist';
     min-height: 100vh;
-    padding-top: 5px;
+    padding-top: 100px;
 }
 
 #permainan .content {    
@@ -182,7 +182,7 @@ aside img {
     margin-top: 100px;
 }
 
-#petunjuk {    
+#simbol {    
     float: left;
     width: 20%;
     padding: 0px 10px;
@@ -190,7 +190,7 @@ aside img {
     justify-content: center;
 }
 
-#petunjuk h2{
+#simbol h2{
     text-align: center;
     color: #ECA869;
     background-color: #e6e4e4;
@@ -212,9 +212,9 @@ aside img {
     margin: auto 25%;
 }
 
-#petunjuk .card{
+#simbol .card{
     text-align: center;
-    color: #ECA869;
+    color: #ee9e53;
     background-color: #e6e4e4;
     border-radius: 0px;
     border-width: 0;
@@ -222,6 +222,8 @@ aside img {
     display: inline-flex;
     font-family: "Cartoonist",monospace;
     font-size: 20px;
+    -webkit-text-stroke-color: #ca782c;
+    float: left;
     width: 50%;
     justify-content: center;
     line-height: 1;
@@ -232,14 +234,84 @@ aside img {
     margin: auto 25%;
 }
 
-#petunjuk .card li {
-    list-style: none;
-    padding: 5px 0;
+#simbol .card .simbol-gambar img {
+    width: 70%;
 }
 
-#petunjuk .card img {
-    height: -20%;
+#simbol .card .keterangan {
+    font-size: 15px;
 }
+
+#petunjuk {
+    padding: 0px 10px;
+    margin: 30px;
+}
+
+#petunjuk h2{
+    text-align: center;
+    color: #6096B4;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    display: inline-flex;
+    font-family: "Cartoonist",monospace;
+    font-size: 20px;
+    height: 48px;
+    width: 50%;
+    justify-content: center;
+    line-height: 1;
+    margin-left: 100px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    margin: auto 25%;
+}
+
+
+
+.section2{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:20px;
+}
+
+.section2 .content{
+float: left;
+width: 100%;
+margin-top:60px;
+}
+
+.section2 .content .right{
+	width: 50%;
+	float: left;
+	padding:0px 10px;
+
+}
+.section2 .content .right .card{
+	padding:200px 15px;
+	font-size:30px;
+	color:#fff;
+	background-color: gray;
+}
+.section2 .content .left{
+	width: 50%;
+	float: left;
+	padding: 0px 10px;
+}
+.section2 .content .left .card{
+	padding:48px 15px;
+	font-size:30px;
+	color:#fff;
+	background-color: gray;
+	margin-bottom:20px;
+    margin-left: 20px;
+}
+
 /* #score {    
     float: left;
     width: 20%;
@@ -297,5 +369,5 @@ aside img {
   * Include this rule to trigger hasLayout and contain floats.
   */
  .cf {
-     *zoom: 1;
+    zoom: 1;
  }
