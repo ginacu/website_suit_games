@@ -280,7 +280,7 @@ aside img {
 
 .area-komputer {
     width: 560px;
-    height: 220px;
+    height: 200px;
     margin: 5px auto;
     background-color: #e6e4e4;
     border-radius: 0px;
@@ -293,7 +293,7 @@ aside img {
 
 .area-player {
     width: 560px;
-    height: 220px;
+    height: 200px;
     margin: 5px auto;
     background-color: #e6e4e4;
     border-radius: 0px;
@@ -304,7 +304,20 @@ aside img {
     box-sizing: border-box;
 }
 
-
+.info {
+    width: 200px;
+    height: 60px;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -30px;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
 
 @font-face {
     font-family: "Cartoonist";
