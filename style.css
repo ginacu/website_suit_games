@@ -346,9 +346,15 @@ ul {
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #f2f2f2;
     z-index: 1;
+    text-align:center;
+}
+
+.card-img2 img {
+    right: 0;
+    margin: 1em auto;
 }
 
 @font-face {
