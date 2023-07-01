@@ -314,7 +314,7 @@ aside img {
     left: 50%;
     margin-left: -100px;
     top: 50%;
-    margin-top: -30px;
+    margin-top: -80px;
     background-color: #f2f2f2;
     z-index: 1;
 }
@@ -372,6 +372,18 @@ ul {
     top: 2px;
 }
 
+.score {
+    width: 560px;
+    height: 100px;
+    margin: 5px auto;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: "Cartoonist";
