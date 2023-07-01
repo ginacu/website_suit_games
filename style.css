@@ -357,6 +357,22 @@ ul {
     margin: 1em auto;
 }
 
+.gajah, .orang, .semut {
+    transition: .3s;
+    position: relative;
+    top:0;
+    cursor: pointer;
+}
+
+.gajah:hover, .semut:hover, .orang:hover, .active {
+    box-shadow: 0 0 10px 2px #f19f53;
+}
+
+.gajah:active, .semut:active, .orang:active {
+    top: 2px;
+}
+
+
 @font-face {
     font-family: "Cartoonist";
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
