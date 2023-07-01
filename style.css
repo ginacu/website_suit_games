@@ -269,55 +269,39 @@ aside img {
     margin: auto 25%;
 }
 
-.section2{
- float:left;
- width: 100%;
- background-color:#dddddd; 
- text-align: center;
- padding:50px 10px;
- margin-bottom:20px;
-}
-
-.section2 .content{
-float: left;
-width: 100%;
-margin-top:60px;
-}
-
-.section2 .content .right{
-	width: 50%;
-	float: left;
-	padding:0px 10px;
-
-}
-.section2 .content .right .card{
-	padding:200px 15px;
-	font-size:30px;
-	color:#fff;
-	background-color: gray;
-}
-.section2 .content .left{
-	width: 50%;
-	float: left;
-	padding: 0px 10px;
-}
-.section2 .content .left .card{
-	padding:48px 15px;
-	font-size:30px;
-	color:#fff;
-	background-color: gray;
-	margin-bottom:20px;
-    margin-left: 20px;
-}
-
 #arena {   
     float: left;
     width: 70%;
     padding: 0px 10px;
     margin-left: 30px;
     justify-content: center;
-    background-color: #BDCDD6; /* HAPUS || hanya penanda */
     position: relative;
+}
+
+.area-komputer {
+    width: 560px;
+    height: 220px;
+    margin: 5px auto;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.area-player {
+    width: 560px;
+    height: 220px;
+    margin: 5px auto;
+    background-color: #e6e4e4;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 
