@@ -385,6 +385,61 @@ ul {
     box-sizing: border-box;
 }
 
+.score .card {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: -25px;
+    border: 1px solid black;
+}
+
+.score h4, .vs{
+    color: #e98a31;
+    font-weight: bold;
+    text-align: center;
+}
+
+.score .vs {
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+}
+
+.score .mulai-lagi {
+    border: 1px solid black;
+    position: absolute;
+    width: 200px;
+    right: 10px;
+    font-size: 20px;
+    color: #e98a31;
+    font-weight: bold;
+    text-align: center;
+}
+
+.score .skor-komputer p, .skor-player p {
+    color: #5291b3;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.score .ya, .tidak {
+    width: 40px;
+    height: 35px;
+    display: inline-block;
+    font-size: 15px;
+    
+    border: 1px solid black;
+}
+
+.score .tidak {
+    margin-left: 10px;
+    background-color: #FF6961;
+    color: white;
+}
+
 @font-face {
     font-family: "Cartoonist";
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
