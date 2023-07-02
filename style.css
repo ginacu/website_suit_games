@@ -391,7 +391,6 @@ ul {
     height: 70px;
     margin-left: 10px;
     margin-top: -25px;
-    border: 1px solid black;
 }
 
 .score h4, .vs{
@@ -406,16 +405,6 @@ ul {
     font-size: 30px;
 }
 
-.score .mulai-lagi {
-    border: 1px solid black;
-    position: absolute;
-    width: 200px;
-    right: 10px;
-    font-size: 20px;
-    color: #e98a31;
-    font-weight: bold;
-    text-align: center;
-}
 
 .score .skor-komputer p, .skor-player p {
     color: #5291b3;
@@ -425,19 +414,57 @@ ul {
     margin-top: 5px;
 }
 
-.score .ya, .tidak {
+.score .mulai-lagi {
+    position: absolute;
+    width: 200px;
+    right: 10px;
+    font-size: 20px;
+    color: #e98a31;
+    font-weight: bold;
+    text-align: center;
+}
+
+.score .mulai-lagi .ya, .tidak {
     width: 40px;
-    height: 35px;
+    height: 30px;
+    margin: 5px 15px;
     display: inline-block;
     font-size: 15px;
+    border-radius: 0px;
+    border-width: 0;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 14px -3px; 
+
     
-    border: 1px solid black;
+    transition: .3s;
+    position: relative;
+    top:0;
+    cursor: pointer;
+}
+
+.score .ya {
+    background-color: #76B947;
+    text-align: center;
 }
 
 .score .tidak {
-    margin-left: 10px;
     background-color: #FF6961;
-    color: white;
+    text-align: center;
+}
+
+.score .ya, .tidak p {
+    padding: 6px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.score .ya:hover, .tidak:hover, .active {
+    box-shadow: 0 0 10px 2px #f19f53;
+}
+
+.score .ya:active, .tidak:active {
+    top: 2px;
 }
 
 @font-face {
