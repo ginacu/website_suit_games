@@ -200,13 +200,9 @@ aside img {
     display: inline-flex;
     font-family: "Cartoonist",monospace;
     font-size: 20px;
-    height: 48px;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     line-height: 1;
-    margin-left: 100px;
-    margin-top: 30px;
-    overflow: hidden;
     padding: 15px;
     position: relative;
     margin: auto 25%;
@@ -214,32 +210,30 @@ aside img {
 
 #simbol .card{
     text-align: center;
+    width: 100%;
     color: #ee9e53;
     background-color: #e6e4e4;
     border-radius: 0px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    display: inline-flex;
     font-family: "Cartoonist",monospace;
     font-size: 20px;
     -webkit-text-stroke-color: #ca782c;
     float: left;
-    width: 50%;
     justify-content: center;
     line-height: 1;
-    margin-left: 100px;
-    margin-top: 30px;
     padding: 10px;
     position: relative;
     margin: auto 25%;
-}
 
-#simbol .card .simbol-gambar img {
-    width: 70%;
+    
+    display: grid;
+    grid-template-columns: (2, auto);
+    gap: 15px;
 }
 
 #simbol .card .keterangan {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #petunjuk {
