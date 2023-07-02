@@ -48,7 +48,7 @@ nav li {
 }
 
 .container{
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 .card {
@@ -145,7 +145,7 @@ aside img {
     background-color: #BDCDD6;
     font-family: 'Cartoonist';
     min-height: 100vh;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 
 #tentangPermainan p {
@@ -173,7 +173,7 @@ aside img {
     background-color: #EEE9DA;
     font-family: 'Cartoonist';
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 #permainan .content {    
@@ -357,31 +357,31 @@ ul {
     margin: 1em auto;
 }
 
-.gajah, .orang, .semut {
+.area-player .gajah, .orang, .semut {
     transition: .3s;
     position: relative;
     top:0;
     cursor: pointer;
 }
 
-.gajah:hover, .semut:hover, .orang:hover, .active {
+.area-player .gajah:hover, .semut:hover, .orang:hover, .active {
     box-shadow: 0 0 10px 2px #f19f53;
 }
 
-.gajah:active, .semut:active, .orang:active {
+.area-player .gajah:active, .semut:active, .orang:active {
     top: 2px;
 }
 
 .score {
     width: 560px;
-    height: 100px;
+    height: 80px;
     margin: 5px auto;
     background-color: #e6e4e4;
     border-radius: 0px;
     border-width: 0;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
     position: relative;
-    padding-top: 40px;
+    padding-top: 35px;
     box-sizing: border-box;
 }
 
@@ -458,7 +458,7 @@ ul {
 }
 
 .score .ya:hover, .tidak:hover, .active {
-    box-shadow: 0 0 10px 2px #f19f53;
+    box-shadow: 0 0 10px 2px #7c7b7a;
 }
 
 .score .ya:active, .tidak:active {
