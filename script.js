@@ -33,8 +33,22 @@ function putar() {
     }, 100) // 100 artinya 0,1 detik, jadi artinya setiap 0,1 detik itu ganti2 gambarnya
 }
 
+// SCORE
+// const skorKomputer = document.querySelectorAll('.skor-komputer p');
+// const skorPlayer = document.querySelectorAll('.skor-player p');
+// let nKomputer = 0;
+// let nPlayer = 0
+// function skor() {
+//     if (hasil == 'MENANG') return skorPlayer.innerHTML = nPlayer++;
+//     else if (hasil == 'KALAH') return skorKomputer.innerHTML = nKomputer++;
+// }
+
 // seleksi tombol gajah, orang, dan semut
 // Cara 1, cuma 1 statement
+
+var nPlayer = 0;
+var nKomputer = 0;
+
 const pilihan = document.querySelectorAll('li img');
 pilihan.forEach(function(i) {
     i.addEventListener('click', function() {
@@ -52,7 +66,28 @@ pilihan.forEach(function(i) {
             
             // masukkan hasil berupa tulisan di kotak tengah
             const info = document.querySelector('.info');
-            info.innerHTML = hasil;
+            info.innerHTML = hasil;            
+            
+            skorPlayer.innerHTML = nPlayer;
+            skorKomputer.innerHTML = nKomputer;       
+            
         }, 1000);
+        
+        if (hasil == 'MENANG') {
+            nPlayer += 1;
+        }
+        else if (hasil == 'KALAH') {
+            nKomputer += 1;
+        }
+    
+        const skorPlayer = document.querySelector('.skor-player p');
+        const skorKomputer = document.querySelector('.skor-komputer p');
+
     })
 });
+
+// tombol reset score
+const reset = document.querySelector('.ya p');
+reset.addEventListener('click', function() {
+    location.reload()
+})
