@@ -47,6 +47,9 @@ nav li {
     right: 30px;
     padding-left: 10px;
     color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
 }
 
 
@@ -303,6 +306,11 @@ aside img {
 
 .info {
     width: 200px;
+    color: #e98a31;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 30px;
     height: 60px;
     border-radius: 0px;
     border-width: 0;
@@ -361,7 +369,7 @@ ul {
     cursor: pointer;
 }
 
-.area-player .gajah:hover, .semut:hover, .orang:hover, .active {
+.card-img2:hover, .active {
     box-shadow: 0 0 10px 2px #f19f53;
 }
 
@@ -464,8 +472,17 @@ ul {
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
 }
 
-@media screen and (max-width: 600px)
-{
+/* @media screen and (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 270px;
+        height: 29vh;
+    }
+} */
+
+@media screen and (max-width: 600px) {
     h1 {
     font-size: 40px;
     margin-left: 100px;
