@@ -23,6 +23,9 @@ nav img {
 nav ul {
     list-style-type: none;
     float: right;
+    right: 40px;
+    top: -4px;
+    position: absolute;
 }
 
 nav ul a {
@@ -36,6 +39,14 @@ nav ul a {
 
 nav li {
     display: inline-block;
+}
+
+#menu-icon {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    padding-left: 10px;
+    color: white;
 }
 
 
@@ -224,16 +235,10 @@ aside img {
     line-height: 1;
     padding: 10px;
     position: relative;
-    margin: auto 25%;
-
-    
+    margin: auto 25%;    
     display: grid;
     grid-template-columns: (2, auto);
     gap: 15px;
-}
-
-#simbol .card .keterangan {
-    font-size: 20px;
 }
 
 #petunjuk {
@@ -282,7 +287,6 @@ aside img {
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
     position: relative;
     padding-top: 40px;
-    box-sizing: border-box;
 }
 
 .area-player {
@@ -295,7 +299,6 @@ aside img {
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
     position: relative;
     padding-top: 40px;
-    box-sizing: border-box;
 }
 
 .info {
@@ -376,7 +379,6 @@ ul {
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; 
     position: relative;
     padding-top: 35px;
-    box-sizing: border-box;
 }
 
 .score .card {
@@ -427,7 +429,6 @@ ul {
     border-radius: 0px;
     border-width: 0;
     color: white;
-    box-sizing: border-box;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 14px -3px; 
     transition: .3s;
     position: relative;
@@ -448,7 +449,6 @@ ul {
 .score .ya, .tidak p {
     padding: 6px 0;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .score .ya:hover, .tidak:hover, .active {
@@ -462,6 +462,14 @@ ul {
 @font-face {
     font-family: "Cartoonist";
     src: url('sf_cartoonist_hand_bold-webfont.woff') format('woff');
+}
+
+@media screen and (max-width: 600px)
+{
+    h1 {
+    font-size: 40px;
+    margin-left: 100px;
+    }
 }
 
 
