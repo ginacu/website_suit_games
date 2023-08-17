@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://ginacu.github.io/website_suit_games/">
     <img src="assets/img/logo.png" alt="Logo" height="90">
   </a>
 
